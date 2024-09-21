@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ProductListComponent {
 
+  //*ngIf=true, o false Si hay productos que se muestre la tabla, si no, la tabla no se muestra.
 
 productos:any[]=[
   {
@@ -17,7 +18,7 @@ productos:any[]=[
     "Year":2023,
     "Marca":"NISSAN",
     "Color":"Azul",
-    "ImagenUrl":""
+    "ImagenUrl":"https://img.freepik.com/vector-premium/coche-vehiculo-kawaii-vector-caracteres_840347-816.jpg"
   },
   {
     "productoId":2,
@@ -27,7 +28,7 @@ productos:any[]=[
     "Year":2022,
     "Marca":"AUDI",
     "Color":"Blanco",
-    "ImagenUrl":""
+    "ImagenUrl":"https://www.creativefabrica.com/wp-content/uploads/2022/12/31/Kawaii-Chibi-Car-Graphic-55500846-1.png"
   },
   {
     "productoId":3,
@@ -37,7 +38,7 @@ productos:any[]=[
     "Year":2020,
     "Marca":"KIA",
     "Color":"Rojo",
-    "ImagenUrl":""
+    "ImagenUrl":"https://m.media-amazon.com/images/I/61hkuRaoAsL.jpg"
   }
 ]
 }
