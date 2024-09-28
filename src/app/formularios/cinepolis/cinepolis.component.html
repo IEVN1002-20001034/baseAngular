@@ -1,0 +1,36 @@
+<div class="compra-form">
+    <h1>Cinepolis</h1>
+    <h3>Compra de Boletos</h3>
+  
+    <form (ngSubmit)="calcularTotal()">
+ 
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" [(ngModel)]="nombre" name="nombre" required>
+  
+  
+      <label for="personas">Cantidad de personas:</label>
+      <input type="number" id="personas" [(ngModel)]="nPersonas" name="cantidadPersonas" min="1" required>
+  
+      <label for="boletos">Cantidad de boletos:</label>
+      <input type="number" id="boletos" [(ngModel)]="nBoletos" name="cantidadBoletos" min="1" max="7" required>
+  
+
+      <label for="tarjetaCineco">¿Usa tarjeta CINECO?</label>
+      <input type="radio" id="cinecoSi" [(ngModel)]="tarjeta" name="cineco" [value]="true"> Sí
+      <input type="radio" id="cinecoNo" [(ngModel)]="tarjeta" name="cineco" [value]="false"> No
+  
+ 
+      <button type="submit">Comprar</button>
+    </form>
+  
+
+    <div *ngIf="totalPagar > 0">
+      <h3>Total a pagar: {{ totalPagar | currency }}</h3>
+    </div>
+  
+
+    <div *ngIf="mensaje">
+      <p>{{ mensaje }}</p>
+    </div>
+  </div>
+  
