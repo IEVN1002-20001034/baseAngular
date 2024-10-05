@@ -7,7 +7,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   styleUrl: './ejemplo1.component.css'
 })
 export class Ejemplo1Component implements OnInit{
-  formulario!:FormGroup;
+  formulario!:FormGroup;/*"Non-null assertion operator"*/
   resultado!:number;
 
   constructor() { } 
@@ -24,3 +24,10 @@ export class Ejemplo1Component implements OnInit{
     this.resultado=n1+n2;
   }
 }
+
+// dentro de ngOnInit(), se inicializa el formulario con FormGroup y FormControl.
+// Se prefiere inicializar el formulario aquí en lugar del constructor porque ngOnInit
+//  se ejecuta después de que Angular ha configurado completamente el componente.
+
+// formulario!:FormGroup le dice a TypeScript que no se preocupe por posibles problemas de 
+// inicialización, ya que se inicializará correctamente más adelante en ngOnInit().

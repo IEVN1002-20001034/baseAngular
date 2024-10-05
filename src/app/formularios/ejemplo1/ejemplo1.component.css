@@ -1,3 +1,16 @@
+.bg-brown {
+    background-color: #8B4513; 
+  }
+  
+  .bg-orange {
+    background-color: #FFA500; 
+    color: white;
+  }
+  
+  .bg-violet {
+    background-color: #EE82EE; 
+    color: white;
+  }
 form {
     width: 50%;
     margin: 40px auto;
@@ -33,3 +46,17 @@ button:hover {
 p {
     margin-top: 20px;
 }
+  .bg-brown {
+    background-color: #8B4513;
+    color: white;
+  }
+  
+  .bg-orange {
+    background-color: #FFA500;
+    color: white;
+  }
+  
+  .bg-violet {
+    background-color: #EE82EE;
+    color: white;
+  }
